@@ -1,0 +1,13 @@
+input {
+  border: 3px #333 solid;
+}
+.todo {
+  display: flex;
+}
+.checkbutton {
+  margin: 0 5px;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

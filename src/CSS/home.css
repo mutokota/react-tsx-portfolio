@@ -1,0 +1,39 @@
+#main{
+  background-color: #ff7575;
+  height: 100vh;
+}
+#main h1{
+  font-size: 120px;
+  color: #fff;
+  position: absolute;
+  margin-top: 200px;
+}
+
+ #fadein {
+  display: none;
+  font-size: 120px;
+  color: #fff;
+  position: absolute;
+  margin-top: 200px;
+  z-index: 800;
+  text-decoration: line-through;
+  text-decoration-thickness: 6px;
+  animation: fadeInAnime 1.5s forwards;
+  opacity: 0;
+}
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.header-in {
+  background-color: #ff7575;
+  height: 100vh;
+  position: relative;
+} 
