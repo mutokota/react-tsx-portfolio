@@ -1,10 +1,9 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../CSS/header.css";
 
 export const Header = () => {
   return (
-    <div>
+    <div id="header">
       <nav>
         <ul className="ul-list">
           <li>

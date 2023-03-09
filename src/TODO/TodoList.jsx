@@ -1,10 +1,11 @@
 import React from "react";
-////Todo.jsxからtaskList、setTaskListの値を受け取る
+//Todo.jsxからtaskList、setTaskListの値を受け取る
 export const TodoList = ({ taskList, setTaskList }) => {
   //onClickでhandleDeleteを発火させる
   const handleDelete = (id) => {
     //タスクの削除
     //taskListにfilter()を使用し、条件式に合うものを取り出すよう命令
+    //taskListから取り出した値をtaskに代入する
     setTaskList(taskList.filter((task) => task.id !== id));
   };
 

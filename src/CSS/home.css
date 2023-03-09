@@ -1,21 +1,14 @@
-#main{
+#main {
   background-color: #ff7575;
   height: 100vh;
+  position: relative;
 }
-#main h1{
+#fadein {
   font-size: 120px;
   color: #fff;
   position: absolute;
   margin-top: 200px;
-}
-
- #fadein {
-  display: none;
-  font-size: 120px;
-  color: #fff;
-  position: absolute;
-  margin-top: 200px;
-  z-index: 800;
+  z-index: 10;
   text-decoration: line-through;
   text-decoration-thickness: 6px;
   animation: fadeInAnime 1.5s forwards;
@@ -31,9 +24,39 @@
     transform: translateX(0);
   }
 }
-
-.header-in {
-  background-color: #ff7575;
-  height: 100vh;
-  position: relative;
-} 
+#img {
+  opacity: 0;
+  animation: fadeInImgAnime 1s 1.5s forwards;
+}
+@keyframes fadeInImgAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.imgs img {
+  width: 25%;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+}
+.imgs2 img {
+  width: 25%;
+  position: absolute;
+  top: 45%;
+  left: 13%;
+}
+.imgs3 img {
+  width: 17%;
+  position: absolute;
+  top: 66%;
+  right: 30%;
+}
+.imgs4 img {
+  width: 20%;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+}

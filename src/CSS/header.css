@@ -1,7 +1,9 @@
+
 .ul-list {
   position: absolute;
   bottom: 0;
   font-size: 18px;
+  z-index: 50;
 }
 
 .ul-list li {
