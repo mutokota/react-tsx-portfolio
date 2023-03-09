@@ -1,7 +1,6 @@
-import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 
-const FadeInUp = ({ children }: { children: ReactNode }) => {
+const FadeInUp = ({ children }) => {
   const fadeInBox = {
     initial: {
       height: "100vh",
@@ -12,7 +11,7 @@ const FadeInUp = ({ children }: { children: ReactNode }) => {
       height: 0,
       opacity: 1,
       transition: {
-        duration: 1,
+        duration: 1.5,
       },
     },
   };
@@ -20,6 +19,11 @@ const FadeInUp = ({ children }: { children: ReactNode }) => {
   return (
     <div className="abosolute">
       <motion.div
+        style={{
+          backgroundColor: "#75d3ff",
+          width: "100%",
+          height: "100vh",
+        }}
         initial="initial"
         animate="animate"
         variants={fadeInBox}

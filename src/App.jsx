@@ -1,19 +1,11 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./HOME/Home";
 import About from "./ABOUT/About";
 import Todo from "./TODO/Todo";
 import Header from "./COMPONENT/Header";
 import { AnimatePresence } from "framer-motion";
 
-
 function App() {
-  
-
   const location = useLocation();
 
   return (
