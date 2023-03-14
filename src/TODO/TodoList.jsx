@@ -1,4 +1,3 @@
-import React from "react";
 //Todo.jsxからtaskList、setTaskListの値を受け取る
 export const TodoList = ({ taskList, setTaskList }) => {
   //onClickでhandleDeleteを発火させる
