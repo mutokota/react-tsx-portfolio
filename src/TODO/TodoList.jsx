@@ -35,12 +35,12 @@ export const TodoList = ({ taskList, setTaskList }) => {
             </div>
             <div className="todoicons">
               <button>
-                <ihh
+                <i
                   className="checkbutton"
                   onClick={() => handleCompleted(task.id)}
                 >
                   🟦
-                </ihh>
+                </i>
                 <i
                   className="deletebutton button"
                   onClick={() => handleDelete(task.id)}
@@ -52,6 +52,7 @@ export const TodoList = ({ taskList, setTaskList }) => {
           </div>
         ))}
       </div>
+      
     </div>
   );
 };

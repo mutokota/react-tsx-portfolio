@@ -5,6 +5,7 @@ export const InputForm = ({ taskList, setTaskList }) => {
   const [inputText, setInputText] = useState("");
 
   const handleSumit = (e) => {
+    //preventDefault()によって、フォームの既定の動作であるページのリロードがキャンセルされる
     e.preventDefault();
     //タスクを追加する
     //setTaskListを使い情報を更新する
@@ -23,6 +24,7 @@ export const InputForm = ({ taskList, setTaskList }) => {
   };
 
   const handleChenge = (e) => {
+    //e.target.valueでイベントが発生している要素と、その内容の情報を取得している
     setInputText(e.target.value);
   };
   return (
