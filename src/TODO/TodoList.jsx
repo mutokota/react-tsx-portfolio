@@ -1,3 +1,6 @@
+import CheckIcon from "@mui/icons-material/Check";
+import DeleteIcon from "@mui/icons-material/Delete";
+
 //Todo.jsxからtaskList、setTaskListの値を受け取る
 export const TodoList = ({ taskList, setTaskList }) => {
   //onClickでhandleDeleteを発火させる
@@ -38,21 +41,21 @@ export const TodoList = ({ taskList, setTaskList }) => {
                 <i
                   className="checkbutton"
                   onClick={() => handleCompleted(task.id)}
+                  
                 >
-                  🟦
+                  <CheckIcon />
                 </i>
                 <i
                   className="deletebutton button"
                   onClick={() => handleDelete(task.id)}
                 >
-                  🟥
+                  <DeleteIcon />
                 </i>
               </button>
             </div>
           </div>
         ))}
       </div>
-      
     </div>
   );
 };

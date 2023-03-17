@@ -1,3 +1,9 @@
+.todo-list {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
 input {
   border: 3px #333 solid;
 }
@@ -6,6 +12,10 @@ input {
 }
 .checkbutton {
   margin: 0 5px;
+  color: green;
+}
+.deletebutton {
+  color: red;
 }
 .completed {
   text-decoration: line-through;

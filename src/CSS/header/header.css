@@ -1,21 +1,16 @@
-
 .ul-list {
   position: absolute;
   bottom: 0;
   font-size: 18px;
   z-index: 50;
 }
-
 .ul-list li {
   margin-bottom: 10px;
-  
 }
-
+.ul-list li a {
+  text-decoration: none;
+  color: #333;
+}
 .ul-list li a:hover {
   color: #75d3ff;
-}
-
-.ul-list li a{
-  text-decoration: none;
-  color : #333;
-}
+}/*# sourceMappingURL=header.css.map */

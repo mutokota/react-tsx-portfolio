@@ -1,8 +1,9 @@
-import "../CSS/todo.css";
+import "../CSS/todo/todo.css";
 import InputForm from "./InputForm";
 import TodoList from "./TodoList";
 import { useState } from "react";
 import FadeInUp from "../COMPONENT/FadeInUp";
+
 
 export const Todo = () => {
   //useState()でstate変数→taskList, setTaskListを配列に定義
@@ -11,11 +12,13 @@ export const Todo = () => {
   const [taskList, setTaskList] = useState([]);
 
   return (
-    <div>
+    <div id="todo">
       <FadeInUp>
-        {/* taskList, setTaskListの値をInputForm、TodoListに渡す*/}
-        <InputForm taskList={taskList} setTaskList={setTaskList} />
-        <TodoList taskList={taskList} setTaskList={setTaskList} />
+        <div className="todo-list">
+          {/* taskList, setTaskListの値をInputForm、TodoListに渡す*/}
+          <InputForm taskList={taskList} setTaskList={setTaskList} />
+          <TodoList taskList={taskList} setTaskList={setTaskList} />
+        </div>
       </FadeInUp>
     </div>
   );

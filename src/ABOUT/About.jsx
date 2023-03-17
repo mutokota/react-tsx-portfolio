@@ -1,5 +1,5 @@
 //import FadeInUp from "../COMPONENT/FadeInUp";
-import "../CSS/about.css";
+import "../CSS/about/about.css";
 
 export const About = () => {
   return (

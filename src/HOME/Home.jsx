@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import "../CSS/home.css";
+import "../CSS/home/home.css";
 import FadeInUp from "../COMPONENT/FadeInUp";
 import imgBack from "../img/backimg.jpg";
 import imgBack2 from "../img/backimg2.png";
