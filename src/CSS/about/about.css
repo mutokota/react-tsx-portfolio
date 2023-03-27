@@ -1,4 +1,19 @@
+body {
+  background-color: darkgrey;
+}
+
 #about {
-  width: 300px;
-  margin: 50px auto;
+  width: 400px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+#about .about-section {
+  position: relative;
+  z-index: 999;
+  color: rgb(253, 51, 5);
+}
+#about .about-section dd {
+  border-bottom: dashed 2px #fff;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
 }/*# sourceMappingURL=about.css.map */

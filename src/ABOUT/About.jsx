@@ -1,9 +1,10 @@
-//import FadeInUp from "../COMPONENT/FadeInUp";
+import FadeInUp from "../COMPONENT/FadeInUp";
 import "../CSS/about/about.css";
+import Image from "../COMPONENT/Image";
 
 export const About = () => {
   return (
-    //<FadeInUp>
+    <FadeInUp>
     <div id="about">
       <section className="about-section">
         <dl className="about-dl">
@@ -27,8 +28,9 @@ export const About = () => {
           <dd>独立をする事・エンジニア育成に携わる事</dd>
         </dl>
       </section>
+      <Image />
     </div>
-    // </FadeInUp>
+    </FadeInUp>
   );
 };
 
