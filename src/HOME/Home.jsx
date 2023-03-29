@@ -4,6 +4,8 @@ import FadeInUp from "../COMPONENT/FadeInUp";
 import Image from "../COMPONENT/Image";
 
 export const Home = () => {
+
+  
   return (
     <section>
       <FadeInUp>
