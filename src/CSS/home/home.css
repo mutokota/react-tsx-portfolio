@@ -1,0 +1,28 @@
+#main {
+  background-color: #ff7575;
+  height: 100vh;
+  position: relative;
+}
+
+#fadein {
+  font-size: 120px;
+  color: #fff;
+  position: absolute;
+  margin-top: 200px;
+  z-index: 10;
+  text-decoration: line-through;
+  text-decoration-thickness: 6px;
+  animation: fadeInAnime 1.5s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=home.css.map */

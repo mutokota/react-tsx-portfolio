@@ -1,0 +1,27 @@
+.todo-list {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+input {
+  border: 3px #333 solid;
+}
+
+.todo {
+  display: flex;
+}
+
+.checkbutton {
+  margin: 0 5px;
+  color: green;
+}
+
+.deletebutton {
+  color: red;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}/*# sourceMappingURL=todo.css.map */

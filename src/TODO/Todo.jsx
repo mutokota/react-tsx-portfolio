@@ -1,4 +1,4 @@
-import "../CSS/todo.css";
+import "../CSS/todo/todo.css";
 import InputForm from "./InputForm";
 import TodoList from "./TodoList";
 import { useState } from "react";
@@ -9,13 +9,15 @@ export const Todo = () => {
   //taskListに情報が入っていく
   //setTaskListは情報を更新する際に使用する
   const [taskList, setTaskList] = useState([]);
-
+  //親コンポーネントから子コンポーネントにuseStateを使用し、データを受け渡している
   return (
-    <div>
+    <div id="todo">
       <FadeInUp>
-        {/* taskList, setTaskListの値をInputForm、TodoListに渡す*/}
-        <InputForm taskList={taskList} setTaskList={setTaskList} />
-        <TodoList taskList={taskList} setTaskList={setTaskList} />
+        <div className="todo-list">
+          {/* taskList, setTaskListの値をInputForm、TodoListに渡す*/}
+          <InputForm taskList={taskList} setTaskList={setTaskList} />
+          <TodoList taskList={taskList} setTaskList={setTaskList} />
+        </div>
       </FadeInUp>
     </div>
   );
