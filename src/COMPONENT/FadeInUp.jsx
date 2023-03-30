@@ -11,7 +11,7 @@ const FadeInUp = ({ children }) => {
       height: 0,
       opacity: 1,
       transition: {
-        duration: 1.5,
+        duration: 1,
       },
     },
   };
@@ -20,7 +20,7 @@ const FadeInUp = ({ children }) => {
     <div className="abosolute">
       <motion.div
         style={{
-          backgroundColor: "#75d3ff",
+          backgroundColor: "#505050",
           width: "100%",
           height: "100vh",
         }}

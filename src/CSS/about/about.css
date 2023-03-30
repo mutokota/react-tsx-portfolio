@@ -1,16 +1,17 @@
-body {
-  background-color: darkgrey;
+.about-bg {
+  background-color: #66cdaa;
+  height: 100vh;
 }
 
 #about {
-  width: 400px;
+  width: 25%;
   padding-top: 50px;
   margin: 0 auto;
 }
 #about .about-section {
   position: relative;
   z-index: 999;
-  color: rgb(253, 51, 5);
+  color: rgb(224, 45, 4);
 }
 #about .about-section dd {
   border-bottom: dashed 2px #fff;

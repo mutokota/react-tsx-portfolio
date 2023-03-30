@@ -11,7 +11,7 @@ export const Todo = () => {
   const [taskList, setTaskList] = useState([]);
   //親コンポーネントから子コンポーネントにuseStateを使用し、データを受け渡している
   return (
-    <div id="todo">
+    <div id="todo" className="container">
       <FadeInUp>
         <div className="todo-list">
           {/* taskList, setTaskListの値をInputForm、TodoListに渡す*/}
